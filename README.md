@@ -1,3 +1,4 @@
+# My first game with phaser.js
 
  - This is my first game by using phaser .
  - It shows step by step how to build simple game with phaser .
