@@ -1,4 +1,4 @@
-# My first game with phaser.js
+# Phaser Star Game .
 
  - This is phaser star game.
  - Use ./steps to see step by step how it was built.
