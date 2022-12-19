@@ -49,14 +49,35 @@
         .score {
             width: 60%;
             height: 60%;
-            padding-top: 15vh;
+            padding-top: 9vh;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+
+        .score h1 {
+            font-weight: 700;
         }
 
         .score h1, p{
             text-align: center;
             font-size: 1.7rem;
             font-family: 'Courier New', Courier, monospace;
+        }
+
+        .score button {
+            font-size: 1.4rem;
+            font-weight: 600;
+            width: 45%;
+            height: 20%;
+            display: block;
+            color: white;
+            margin: 0 auto;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: black;
+            border-radius: 2px;
+        }
+
+        .score button:active {
+            scale: 0.99;
         }
 
     </style>
@@ -69,12 +90,17 @@
                 <div class="score">
                     <h1>Game Over</h1>
                     <p>Score: <span id="score"></span></p>
+                    <button onclick="replay()">Replay</button>
                 </div>
             </div>
         </div>
     </div>
 
 <script type="text/javascript">
+
+    const replay = () => {
+        window.location.reload();
+    }
 
 var config = {
     type: Phaser.AUTO,
@@ -197,11 +223,15 @@ function update ()
     if (gameOver)
     {
 
-        let scoreDiv = document.getElementById('gameover-max-div');
-        let scoreSpan = document.getElementById('score');
+        setTimeout(() => {
 
-        scoreSpan.textContent = score;
-        scoreDiv.style.display = 'block';
+            let scoreDiv = document.getElementById('gameover-max-div');
+            let scoreSpan = document.getElementById('score');
+
+            scoreSpan.textContent = score;
+            scoreDiv.style.display = 'block';
+
+        }, 1500);
 
         return;
     }
