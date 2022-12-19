@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+body canvas {
+    margin-top: 10vh;
+}
+
+#gameover-max-div {
+    position: absolute;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.703);
+    z-index: 1;
+}
+
+.gameover-min-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-board {
+    width: 45%;
+    height: 60%;
+    border: 1px solid rgba(243, 242, 242, 0.968);
+    border-radius: 3px;
+    background-color: rgba(243, 242, 242, 0.968);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    width: 60%;
+    height: 60%;
+    padding-top: 9vh;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.score h1 {
+    font-weight: 700;
+}
+
+.score h1, p{
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.score button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 45%;
+    height: 20%;
+    display: block;
+    color: white;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    border-radius: 2px;
+}
+
+.score button:active {
+    scale: 0.99;
+}
