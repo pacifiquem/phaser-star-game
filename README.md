@@ -1,5 +1,6 @@
 # My first game with phaser.js
 
- - This is my first game by using phaser .
- - It shows step by step how to build simple game with phaser .
- - Every .html file show stage (part1.html) is start and (part10.html) is the end .
+ - This is phaser star game.
+ - Use ./steps to see step by step how it was built.
+ - Every .html file in ./steps show stage (part1.html) is start and (part10.html) is the end .
+ - <a href="https://phaser-star-game.vercel.app">Live Demo</a>
