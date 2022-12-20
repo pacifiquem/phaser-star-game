@@ -71,3 +71,7 @@ body canvas {
 .score button:active {
     scale: 0.99;
 }
+
+.score button:hover {
+    cursor: pointer;
+}
