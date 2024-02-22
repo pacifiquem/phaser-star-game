@@ -1,3 +1,7 @@
+> [!Important]
+> Please follow me and star this repo before forking.
+
+
 # Phaser Star Game .
 
  - This is phaser star game.
